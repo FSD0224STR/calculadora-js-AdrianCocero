@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora simple creada con JavaScript por Adrián Cocero</h1>
+    <div class="calculator"> 
+            <input type="text" id="valor_numero" maxlength="15" class="calculator__display" value="0"  readonly="true">
+        <div class="calculator__keys">
+            <input type="Button" id="AC" value="AC" class="key--clear" onclick="darAC()">
+            <input type="button" value="" class="key--operator">
+            <input type="button" value="" class="key--operator">
+            <input type="Button" id="dividir" value="÷" class="key--operator" onclick="operar(4)">
+            <input type="Button" id="7" value="7" class="button" onclick="darNumero('7')">
+            <input type="Button" id="8" value="8" class="button" onclick="darNumero('8')">
+            <input type="Button" id="9" value="9" class="button" onclick="darNumero('9')">
+            <input type="Button" id="multiplicar" value="×"class="key--operator" onclick="operar(3)">
+            <input type="Button" id="4" value="4" class="button" onclick="darNumero('4')">
+            <input type="Button" id="5" value="5" class="button" onclick="darNumero('5')">
+            <input type="Button" id="6" value="6" class="button" onclick="darNumero('6')">
+            <input type="Button" id="Restar" value="-" class="key--operator" onclick="operar(2)">
+            <input type="Button" id="1" value="1" class="button" onclick="darNumero('1')">
+            <input type="Button" id="2" value="2" class="button" onclick="darNumero('2')">
+            <input type="Button" id="3" value="3" class="button" onclick="darNumero('3')">
+            <input type="Button" id="Sumar" value="+"  class="key--operator" onclick="operar(1)">
+            <input type="Button" id="0" value="0" class="button" onclick="darNumero('0')">
+            <input type="Button" id="," value="," class="button" onclick="darComa()">
+            <input type="Button" id="C" value="C" class="button" onclick="">
+            <input type="Button" id="igual" value="=" class="key--equal" onclick="esIgual()">
+        </div>
+    </div>
+</body>
+<link defer rel="stylesheet" href="styles.css">
+<script defer src="index.js"></script>
+</html>
